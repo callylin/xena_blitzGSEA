@@ -6,6 +6,20 @@ The Xena Browser is utilized by many scientists and researchers to visualize can
 * Testing and evaluating the results produced from blitzGSEA to determine if it is biologically sound
 * Determining the runtime and memory usage of running blitzGSEA with GNU time
 * Investigating the Enrichr libraries 
+
+## Results & Outcomes
+Throughout the 10 weeks, a better understanding of blitzGSEA was gained and several scripts were written to utilize the functionalities available. It was determined that the Pandas dataframe returned from blitzGSEA could be used to provide users with a full table result in a .tsv format which includes the enrichment score (ES), normalized enrichment score (NES), and other data for every geneset of their library—as seen [here](https://github.com/callylin/xena_blitzGSEA/tree/main/results). In addition, the functions written within the source code were found to be able to be used to provide individuals with specific details of a geneset of their choosing along with a top table and running sum plot; an example can be found [here](https://github.com/callylin/xena_blitzGSEA/tree/main/results/detailed_output). A final [main script](https://github.com/callylin/xena_blitzGSEA/blob/main/scripts/main.py) was written, combining the functions that generate the full-table and detailed results. It takes in two .tsv files (a geneset library and signature) and reformats it to the proper form for blitzGSEA to run.
+
+The main script was used to run analysis on 2 differential gene expression signatures and 3 geneset libraries—resulting in a total of 6 analyses. When running the analyses for the first time, several NES values were being computed as -inf/inf which was unexpected. After further research, it was found that the way the blitzGSEA source code was calculating the values had to be rewritten accordingly to produce a finite value. It is unknown why the rearranging of equations results in the proper value, but the analyses were rerun after the code was modified (modified code available [here](https://github.com/callylin/blitzgsea)). 
+
+As seen in Table 1, each analysis was completed within a reasonable amount of time (user time < 150 seconds) and memory usage (< 950 megabytes). The results computed by blitzGSEA were compared to previous results from traditional GSEA, and several scatter plots were made between the NES values to verify the validity of the values produced by blitzGSEA. Each scatter plot between all positive and negative NES’ from both blitzGSEA and traditional GSEA had a correlation coefficient (r) > than 0.78 which is an indication of high accuracy (Table 1 & Figure 1). 
+
+| Signature (.rnk) | Geneset (.gmt) | Size | Time (s) | Memory (mb) | r |
+| :----:           |    :----:      | :---:|  :----:  |    :----:   |:-:|
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+
+
 ## References
 [1] Subramanian, A., Tamayo, P., Mootha, V. K., Mukherjee, S., Ebert, B. L., Gillette, M. A., Paulovich, A., Pomeroy, S. L., Golub, T. R., Lander, E. S., & Mesirov, J. P. (2005). Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proceedings of the National Academy of Sciences of the United States of America, 102(43), 15545–15550. https://doi.org/10.1073/pnas.0506580102 
 
