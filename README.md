@@ -15,10 +15,13 @@ The main script was used to run analysis on 2 differential gene expression signa
 As seen in Table 1, each analysis was completed within a reasonable amount of time (user time < 150 seconds) and memory usage (< 950 megabytes). The results computed by blitzGSEA were compared to previous results from traditional GSEA, and several scatter plots were made between the NES values to verify the validity of the values produced by blitzGSEA. Each scatter plot between all positive and negative NES’ from both blitzGSEA and traditional GSEA had a correlation coefficient (r) > than 0.78 which is an indication of high accuracy (Table 1 & Figure 1). 
 
 | Signature (.rnk) | Geneset (.gmt) | Size | Time (s) | Memory (mb) | r |
-| :----:           |    :----:      | :---:|  :----:  |    :----:   |:-:|
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
-
+|      :----:      |     :----:     | :---:|  :----:  |   :----:    |:-:|
+| basal_versus_lum |      c2_c3     | Here's this   |
+| basal_versus_lum | c5.all.v7.5.1.symbols |
+| basal_versus_lum | msigdb.v7.5.1.symbols | And more      |
+| ESR1_low_versus_ESR1_high |      c2_c3     |
+| ESR1_low_versus_ESR1_high | c5.all.v7.5.1.symbols |
+| ESR1_low_versus_ESR1_high | msigdb.v7.5.1.symbols |
 
 ## References
 [1] Subramanian, A., Tamayo, P., Mootha, V. K., Mukherjee, S., Ebert, B. L., Gillette, M. A., Paulovich, A., Pomeroy, S. L., Golub, T. R., Lander, E. S., & Mesirov, J. P. (2005). Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proceedings of the National Academy of Sciences of the United States of America, 102(43), 15545–15550. https://doi.org/10.1073/pnas.0506580102 
