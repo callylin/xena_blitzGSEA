@@ -16,12 +16,12 @@ As seen in Table 1, each analysis was completed within a reasonable amount of ti
 
 | Signature (.rnk) | Geneset (.gmt) | Size | Time (s) | Memory (mb) | r |
 |      :----:      |     :----:     | :---:|  :----:  |   :----:    |:-:|
-| basal_versus_lum |      c2_c3     | Here's this   |
-| basal_versus_lum | c5.all.v7.5.1.symbols |
-| basal_versus_lum | msigdb.v7.5.1.symbols | And more      |
-| ESR1_low_versus_ESR1_high |      c2_c3     |
-| ESR1_low_versus_ESR1_high | c5.all.v7.5.1.symbols |
-| ESR1_low_versus_ESR1_high | msigdb.v7.5.1.symbols |
+| basal_versus_lum |      c2_c3     | 7494 | 121.28 | 303.968 | 0.78891888 |
+| basal_versus_lum | c5.all.v7.5.1.symbols | 15473 | 119.78 | 477.532 | — |
+| basal_versus_lum | msigdb.v7.5.1.symbols | 32880 | 144.36 | 994.368 | - |
+| ESR1_low_versus_ESR1_high |      c2_c3     | 7494 | 116.80 | 308.456 | 0.88312513 |
+| ESR1_low_versus_ESR1_high | c5.all.v7.5.1.symbols | 15473 | 118.71 | 444.304 | 0.87125943 |
+| ESR1_low_versus_ESR1_high | msigdb.v7.5.1.symbols | 32880 | 144.95 | 939.568 |0.88575674 |
 
 ## References
 [1] Subramanian, A., Tamayo, P., Mootha, V. K., Mukherjee, S., Ebert, B. L., Gillette, M. A., Paulovich, A., Pomeroy, S. L., Golub, T. R., Lander, E. S., & Mesirov, J. P. (2005). Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proceedings of the National Academy of Sciences of the United States of America, 102(43), 15545–15550. https://doi.org/10.1073/pnas.0506580102 
